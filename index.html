@@ -9,7 +9,7 @@
     name="description"
     content="A fully functioning roulette game made using Javascript and CSS"
   />
-  <meta name="author" content="e" />
+  <meta name="author" content="haykel" />
   <meta property="og:url" content="/" />
   <meta property="og:title" content="Javascript Roulette" />
   <meta
@@ -20,44 +20,6 @@
   <!-- Web icon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">  
-  <style>
-    #loading {
-      position: fixed;
-      top: 0;
-      height: 100vh;
-      width: 100%;
-      background-color: #252525;
-      z-index: 9999;
-    }
-  </style>
-  <script>
-    function testToken() {
-      const ac_token = localStorage.getItem("access_token");
-      fetch("https://api.maverickhabesha.com/api/v1/auth/get-current-user", {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${ac_token}`,
-        },
-      }).then((rsp) => {
-        if (rsp.status === 401 || rsp.status === 422 || rsp.status === 403) {
-          window.location.replace("https://maverickhabesha.com/login.html");
-        } else {
-          console.log("Token works nicely!");
-        }
-      });
-    }
-    function isAuthenticated() {
-      var token = localStorage.getItem("access_token");
-      if (token === null) {
-        console.log("Not logged in");
-        window.location.replace("https://maverickhabesha.com/login.html");
-      }
-
-      console.log("User is logged in");
-    }
-    isAuthenticated();
-    testToken();
-  </script>
   <!-- Loading CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.10/lottie.min.js"></script>
   <!-- JQuery -->
