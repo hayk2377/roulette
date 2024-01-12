@@ -2,7 +2,7 @@
 
 **Play the thrilling game of roulette developed by Maverick Habesha, a company dedicated to bringing innovative entertainment experiences. ➡️ Spin the wheel, place your bets, and test your luck in this exciting JavaScript game!**
 
-**Click here to visit Maverick Habesha and explore more of their offerings:** [Maverick Habesha](https://maverick habesha .com)
+**Click here to visit Maverick Habesha and explore more of their offerings:** [Maverick Habesha](https://maverickhabesha.com)
 
 **About the Game:**
 
